@@ -41,20 +41,21 @@ const workoutSchema = new Schema({
 
 workoutSchema.virtual("totalDuration").get(function(){
    return this.exercises.reduce((total, exercise)=>{
-        total += exercise.duration;
-    })
+       return total += exercise.duration;
+    }, 0)
 })
 
 workoutSchema.virtual("combinedWeight").get(function(){
     return this.exercises.reduce((total, exercise)=>{
-         total += exercise.weight;
-     })
+    return total += exercise.weight;
+     }, 0)
+
  })
 
  workoutSchema.virtual("totalDistance").get(function(){
     return this.exercises.reduce((total, exercise)=>{
-         total += exercise.distance;
-     })
+         return total += exercise.distance;
+     }, 0)
  })
 
 const Workout = mongoose.model("Workout", workoutSchema);
