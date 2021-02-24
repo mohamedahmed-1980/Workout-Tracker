@@ -20,13 +20,13 @@ The user should be able to:
    * View the total duration of each workout from the past seven workouts on the `stats` page.
 
    ![HOME PAGE](workoutscreen.png)
-   ![HOME PAGE](chart.png)
+   ![CHART PAGE](chart.png)
 
    ## LINKS
 
   * [WEB IN HEROKU ](https://fierce-woodland-25569.herokuapp.com/?id=6035c6584cd2c60015227208)
 
-  
+
 
 
 
